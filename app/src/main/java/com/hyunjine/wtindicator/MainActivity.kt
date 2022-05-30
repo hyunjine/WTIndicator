@@ -62,6 +62,8 @@ class MainActivity : AppCompatActivity() {
         }
 
     private fun changeIndicator(currentView: ImageView) {
+        if (currentView == currentSelectedIndicator) return
+        Log.d("winter", "changeIndicator: ")
         setImageViewDrawable(currentSelectedIndicator, R.drawable.shape_indicator)
         currentSelectedIndicator = currentView
         setImageViewDrawable(currentView, R.drawable.shape_indicator_selected)
