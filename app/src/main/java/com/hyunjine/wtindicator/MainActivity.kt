@@ -33,6 +33,24 @@ class MainActivity : AppCompatActivity() {
 
     private fun setEventListener() =
         binding.run {
+            img1.run {
+                setOnClickListener {
+                    changeIndicator(this)
+                }
+            }
+
+            img2.run {
+                setOnClickListener {
+                    changeIndicator(this)
+                }
+            }
+
+            img3.run {
+                setOnClickListener {
+                    changeIndicator(this)
+                }
+            }
+
             btn.setOnClickListener {
                 setCount()
                 when(count) {
